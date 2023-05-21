@@ -2,7 +2,7 @@ import React,{useState,useEffect,useRef} from 'react'
 
 import Message from './Message'
 const style ={
-    main :`flex flex-col p-[10px] relative`
+    main :`flex flex-col p-[10px] `
 }
 
 const Chat = () => {
@@ -11,7 +11,7 @@ const Chat = () => {
     <main className={style.main}>
         <Message/>
     </main>
-    <span ref={scroll}></span>
+    <span ></span>
     </>
   )
 }
