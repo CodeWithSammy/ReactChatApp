@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Message from './Message';
-// import SendMessage from './SendMessage';
+import SendMessage from './SendMessage';
 import { db } from '../firebase';
 import { query, collection, orderBy, onSnapshot } from 'firebase/firestore';
 
@@ -32,7 +32,7 @@ const Chat = () => {
             <Message key={message.id} message={message} />
           ))}
       </main>
-      {/* <SendMessage scroll={scroll} /> */}
+      <SendMessage scroll={scroll} />
       <span ref={scroll}></span>
     </>
   );
